@@ -1,4 +1,4 @@
-export const calculateAge = (dob) => {
+export const calculateAge = (dob:any) => {
     const birthDate = new Date(dob);
     const today = new Date();
 

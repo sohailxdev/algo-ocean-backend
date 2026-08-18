@@ -1,10 +1,11 @@
-import { createUser, getUsers } from "../services/userService";
+import { createUser, getUsers } from "../services/userService.ts";
 
-import { getRandomDogImage } from "../services/dogService";
+import { getRandomDogImage } from "../services/dogService.ts";
 
-import { calculateAge } from "../utils/age";
+import { calculateAge } from "../utils/age.ts";
+import { Request, Response } from "express";
 
-export const createUserController = async (req, res) => {
+export const createUserController = async (req: Request, res: Response) => {
   try {
     const { firstName, lastName, dob } = req.body;
 
@@ -54,11 +55,11 @@ export const createUserController = async (req, res) => {
   }
 };
 
-export const getUsersController = async (req, res) => {
+export const getUsersController = async (req: Request, res: Response) => {
   try {
     const users = await getUsers();
 
-    const usersWithAge = users.map((user) => ({
+    const usersWithAge = users.map((user: any) => ({
       id: user.id,
       firstName: user.firstName,
       lastName: user.lastName,
