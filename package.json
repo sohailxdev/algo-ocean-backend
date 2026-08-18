@@ -15,7 +15,7 @@
     "nodemon": "^3.1.14",
     "prisma": "^7.9.1",
     "tsx": "^4.23.12",
-    "typescript": "^7.0.2"
+    "typescript": "5.9.3"
   },
   "name": "backend",
   "version": "1.0.0",
