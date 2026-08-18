@@ -1,8 +1,8 @@
-import { createUser, getUsers } from "../services/userService";
+import { createUser, getUsers } from "../services/userService.js";
 
-import { getRandomDogImage } from "../services/dogService";
+import { getRandomDogImage } from "../services/dogService.js";
 
-import { calculateAge } from "../utils/age";
+import { calculateAge } from "../utils/age.js";
 import { Request, Response } from "express";
 
 export const createUserController = async (req: Request, res: Response) => {
