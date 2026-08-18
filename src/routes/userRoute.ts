@@ -3,7 +3,7 @@ import express from "express";
 import {
   createUserController,
   getUsersController,
-} from "../controller/userController.ts";
+} from "../controller/userController";
 
 export const router = express.Router();
 
